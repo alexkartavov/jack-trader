@@ -1,0 +1,14 @@
+# Secrets — never push these
+.secrets/
+*.key
+*.pem
+*.p8
+
+# OpenClaw internal config (may contain API keys)
+.openclaw/
+
+# pm-trading has its own repo — don't nest it
+pm-trading/
+
+# OS
+.DS_Store
