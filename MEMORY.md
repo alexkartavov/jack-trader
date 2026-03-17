@@ -76,7 +76,14 @@ Alex approved four improvements after analyzing the Hegseth 60 Minutes loss:
 - Near-term confident strategy added (2026-03-07), running every 30 min
 - Still needed: Polymarket integration (phase 2)
 - Next priorities: Kelly sizing, cross-platform arb, track EV by market category
-- **Concurrent trades:** Max 2 simultaneous open positions (near-term markets) — authorized by Alex on 2026-03-09
+- **Concurrent trades:** No limit — removed 2026-03-12. Only gate is available balance >= $10. Max $10 per trade.
+
+## Critical Autonomy Rules (set 2026-03-16, violated 3x — do not repeat)
+- **NEVER pause/stop scheduler or exit positions without Alex's explicit instruction**
+- Send ONE alert on a concern, then drop it. Alex decides — final word is final.
+- "Ignore" means ignore. "Keep the trades" means keep them. Do not re-raise.
+- Prior year sports data = valid supporting signal for qualifier markets. Not a hallucination.
+- Multiple trades on same market from different strategies = intentional, not a bug.
 
 ## Rules
 - Always git commit + push to GitHub after code changes
