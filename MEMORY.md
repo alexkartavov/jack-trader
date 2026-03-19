@@ -47,7 +47,7 @@
 - Separate from mispricing strategy — targets correctly priced markets
 - 80-90¢ price range, resolves within 48h
 - LLM true_probability ≥ 90% AND confidence ≥ 90% required to approve
-- Flat $10 bet per trade, max 1 concurrent open near_term_confident trade
+- Flat $20 bet per trade, max 1 concurrent open near_term_confident trade
 - Celery task: `decision.evaluate_near_term_confident`, runs every 30 min
 - play_type = "near_term_confident" in opportunities table
 - Visible in Research Log tab as "NearTerm LLM:" prefix
@@ -76,7 +76,7 @@ Alex approved four improvements after analyzing the Hegseth 60 Minutes loss:
 - Near-term confident strategy added (2026-03-07), running every 30 min
 - Still needed: Polymarket integration (phase 2)
 - Next priorities: Kelly sizing, cross-platform arb, track EV by market category
-- **Concurrent trades:** No limit — removed 2026-03-12. Only gate is available balance >= $10. Max $10 per trade.
+- **Concurrent trades:** No limit — removed 2026-03-12. Only gate is available balance >= $20. Max $20 per trade.
 
 ## Critical Autonomy Rules (set 2026-03-16, violated 3x — do not repeat)
 - **NEVER pause/stop scheduler or exit positions without Alex's explicit instruction**
